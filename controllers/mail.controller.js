@@ -1,8 +1,8 @@
-import mailConfig from "../mail/config.cjs"
+import send from "../mail/config.cjs"
 
 const mailController = {
-  sendMail: async () => {
-    return mailConfig.message;await mailConfig.transporter.sendMail(mailConfig.message)
+  sendMail: async (mail) => {
+    return send(mail)
   }
 }
 
