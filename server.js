@@ -20,7 +20,7 @@ try {
     },
   });
 
-  app.listen({ port: PORT })
+  app.listen({ port: PORT, host })
   console.log(`Server started on ${host}:${PORT}`)
 } catch (err) {
   app.log.error(err)

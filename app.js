@@ -1,7 +1,6 @@
 import { fastify as Fastify } from 'fastify'
 import cors from '@fastify/cors'
 
-
 try {
     process.loadEnvFile('.env')
 } catch (error) {
